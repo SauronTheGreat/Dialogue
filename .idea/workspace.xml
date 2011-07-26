@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1390f2cd-fd95-4b88-902f-b824cb47c486" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Dialogue1.0.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/game_statistics/download_email.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/game_statistics/download_email.pdf.prawn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/game_statistics/general_statistics.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/game_statistics/student_data_options.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/datastats_menu.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/download_email.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/new_case_study.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/questionnaires/selection_mode.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_groups/assign_roles_excel.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_groups/assign_roles_manual.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_groups/create_games_manual.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/student_groups/game_creation.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/welcome/show_all.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample.rb" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\controllers\emails_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\controllers\player_scores_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\helpers\emails_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\helpers\player_scores_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\models\player_score.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\emails\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\emails\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\emails\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\emails\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\emails\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\layouts\_admin_menu.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\layouts\emails.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\player_scores\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\player_scores\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\player_scores\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\player_scores\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\student_groups\add_case_study_bkp.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\db\migrate\20110607150638_create_player_scores.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\g.bar-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\g.dot-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\g.line-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\g.pie-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\g.raphael-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\jquery.imgslide.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\jquery.jcarousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\jquery.lavalamp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\jquery.observe_field.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\javascripts\raphael-min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\stylesheets\demo-print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\stylesheets\demo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\stylesheets\formtastic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\stylesheets\formtastic_changes.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\stylesheets\npp.5.9.Installer.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\10\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\10\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\11\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\12\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\13\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\14\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\15\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\16\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\17\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\18\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\19\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\1\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\1\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\20\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\21\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\22\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\23\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\24\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\25\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\2\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\2\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\3\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\3\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\3\original\Fac.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\4\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\4\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\5\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\5\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\6\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\6\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\7\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\7\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\8\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\8\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\9\original\Book1.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\public\system\csvs\9\original\Book2.csv" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\spec\controllers\emails_controller_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\cache\cancan-1.6.3.gem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\cache\i18n-0.5.0.gem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\cache\nifty-generators-0.4.5.gem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\cache\rake-0.9.2.gem" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\install.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\lib\scope_out.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\tasks\active_finder_tasks.rake" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\database.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\fixtures\schools.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\fixtures\students.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\schema.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\scope_out_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\svn\test\test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\CHANGELOG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\TODO" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\USAGE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\authenticated_generator.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\lib\insert_routes.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\_model_partial.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\activation.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\authenticated_system.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\authenticated_test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\accounts.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\sessions.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\ra_env.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\ra_navigation_steps.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\ra_resource_steps.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\ra_response_steps.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\rest_auth_features_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\features\step_definitions\user_steps.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\login.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\mailer.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\migration.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\model.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\model_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\model_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\model_helper_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\observer.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\signup.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\signup_notification.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\site_keys.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\controllers\access_control_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\controllers\authenticated_system_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\controllers\sessions_controller_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\controllers\users_controller_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\fixtures\users.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\helpers\users_helper_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\spec\models\user_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\test\functional_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\test\mailer_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\test\model_functional_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\generators\authenticated\templates\test\unit_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authentication.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authentication\by_cookie_token.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authentication\by_password.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authorization.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authorization\aasm_roles.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\authorization\stateful_roles.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\trustification.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\lib\trustification\email_validation.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\AccessControl.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\Authentication.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\Authorization.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\RailsPlugins.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\SecurityFramework.graffle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\SecurityFramework.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\SecurityPatterns.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\Tradeoffs.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\notes\Trustification.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\rails\init.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\restful-authentication.gemspec" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\vendor\plugins\technoweenie-restful-authentication-03e0075\tasks\auth.rake" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.png" afterPath="$PROJECT_DIR$/models.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/Book2.csv" afterPath="$PROJECT_DIR$/public/images/Book2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/Fac.csv" afterPath="$PROJECT_DIR$/public/images/Fac.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/case_studies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/case_studies_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/game_statistics_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/game_statistics_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/imports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/imports_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mailbox_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/mailbox_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/planqs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/planqs_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sent_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sent_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/case_study.rb" afterPath="$PROJECT_DIR$/app/models/case_study.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/game.rb" afterPath="$PROJECT_DIR$/app/models/game.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/import.rb" afterPath="$PROJECT_DIR$/app/models/import.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/player_scorecard.rb" afterPath="$PROJECT_DIR$/app/models/player_scorecard.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/briefings/show.html.erb" afterPath="$PROJECT_DIR$/app/views/briefings/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/case_studies/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/case_studies/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/case_studies/index.html.erb" afterPath="$PROJECT_DIR$/app/views/case_studies/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/case_studies/show.html.erb" afterPath="$PROJECT_DIR$/app/views/case_studies/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/game_statistics/offer_chart.html.erb" afterPath="$PROJECT_DIR$/app/views/game_statistics/offer_chart.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/game_statistics/student_data_view.html.erb" afterPath="$PROJECT_DIR$/app/views/game_statistics/student_data_view.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/games/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/games/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/imports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/imports/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/imports/show.html.erb" afterPath="$PROJECT_DIR$/app/views/imports/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/issues/index.html.erb" afterPath="$PROJECT_DIR$/app/views/issues/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/game_statistics.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/game_statistics.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailbox.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailbox.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/messages.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/messages.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/planqs.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/planqs.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/players.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/players.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/sent.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/sent.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/welcome.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/welcome.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mailbox/show.html.erb" afterPath="$PROJECT_DIR$/app/views/mailbox/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/show.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sent/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sent/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sent/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sent/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_group_rules/new.html.erb" afterPath="$PROJECT_DIR$/app/views/student_group_rules/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_groups/create_games.html.erb" afterPath="$PROJECT_DIR$/app/views/student_groups/create_games.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_groups/show.html.erb" afterPath="$PROJECT_DIR$/app/views/student_groups/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/game_select.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/game_select.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/s3.rb" afterPath="$PROJECT_DIR$/config/initializers/s3.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/rake-d.txt" afterPath="$PROJECT_DIR$/nbproject/private/rake-d.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/amcharts/amcolumn_data.txt" afterPath="$PROJECT_DIR$/public/amcharts/amcolumn_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/amcharts/amline_data.txt" afterPath="$PROJECT_DIR$/public/amcharts/amline_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/amcharts/swfobject.js" afterPath="$PROJECT_DIR$/public/amcharts/swfobject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/amcharts/amcolumn_data.txt" afterPath="$PROJECT_DIR$/public/images/amcharts/amcolumn_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/amcharts/amline_data.txt" afterPath="$PROJECT_DIR$/public/images/amcharts/amline_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/amcharts/swfobject.js" afterPath="$PROJECT_DIR$/public/images/amcharts/swfobject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/menu.js" afterPath="$PROJECT_DIR$/public/javascripts/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/rails.js" afterPath="$PROJECT_DIR$/public/javascripts/rails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/swfobject.js" afterPath="$PROJECT_DIR$/public/javascripts/swfobject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/messages.css" afterPath="$PROJECT_DIR$/public/stylesheets/messages.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/welcome_style.css" afterPath="$PROJECT_DIR$/public/stylesheets/welcome_style.css" />
+    </list>
+    <ignored path="Dialogue1.0.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Dialogue1.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="198" column="43" selection-start="8610" selection-end="8610" vertical-scroll-proportion="0.32015067">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_select.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/game_select.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="12" selection-start="1277" selection-end="1422" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="GeneratorOptions">
+    <option name="VCS_SHOW_CONFIRMATION" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/views/game_statistics/general_statistics.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/game_statistics_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/student_group_rules/new.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110722043848_create_student_routings.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110722054943_mymigration.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/player_answers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/questionnaires/selection_mode.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/questionnaires/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/questionnaires_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/questionnaires/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/student_routing.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/game_select.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dialogue1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="ruby.project.structure" />
+    <property name="recentsLimit" value="5" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0\app\views\layouts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Rake.db:migrate">
+    <configuration default="false" name="sample" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Dialogue1.0" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/sample.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="Dialogue1.0" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="player_answers_controller" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Dialogue1.0" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/app/controllers" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/app/controllers/player_answers_controller.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="Dialogue1.0" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="spec" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="Dialogue1.0" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Production: Dialogue1.0" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="Dialogue1.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Development: Dialogue1.0" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="Dialogue1.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="C:\Users\Rushabh Hathi\Desktop\Dialogue1.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Ruby.sample" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.player_answers_controller" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Production: Dialogue1.0" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Development: Dialogue1.0" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">C:\Users\Rushabh Hathi\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1390f2cd-fd95-4b88-902f-b824cb47c486" name="Default" comment="" />
+      <created>1309779004338</created>
+      <updated>1309779004338</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3479909" sideWeight="0.22439024" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25441968" sideWeight="0.699187" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30081302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110722054943_mymigration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="70" selection-start="59" selection-end="384" vertical-scroll-proportion="0.26493508" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110722055815_studentroutingdefault.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="67" selection-end="67" vertical-scroll-proportion="0.044155844" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/player_answers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="40" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questionnaires/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="160" selection-start="1157" selection-end="1301" vertical-scroll-proportion="0.79395604" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="29" selection-start="1894" selection-end="1894" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/questionnaires_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="73" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.6854839" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questionnaires/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="740" selection-end="740" vertical-scroll-proportion="0.81058496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questionnaires/selection_mode.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="73" selection-start="265" selection-end="265" vertical-scroll-proportion="0.18681319" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questionnaires/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="52" selection-start="521" selection-end="521" vertical-scroll-proportion="0.63129973" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="6" selection-start="652" selection-end="721" vertical-scroll-proportion="0.21091811" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/student_routing.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.042183623" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/student_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/student_groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="572" column="56" selection-start="13560" selection-end="13560" vertical-scroll-proportion="16.915632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/game_select.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="12" selection-start="1277" selection-end="1422" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="43" selection-start="8610" selection-end="8610" vertical-scroll-proportion="0.32015067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

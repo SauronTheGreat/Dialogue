@@ -1,0 +1,21 @@
+<% title "Option Values" %>
+
+<table>
+  <tr>
+    <th>Issue Option</th>
+    <th>Role</th>
+    <th>Value</th>
+  </tr>
+  <% for option_value in @option_values %>
+    <tr>
+      <td><%=h option_value.issue_option_id %></td>
+      <td><%=h option_value.role_id %></td>
+      <td><%=h option_value.value %></td>
+      <td><%= link_to "Show", option_value %></td>
+      <td><%= link_to "Edit", edit_option_value_path(option_value) %></td>
+      <td><%= link_to "Destroy", option_value, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Option Value", new_option_value_path %></p>

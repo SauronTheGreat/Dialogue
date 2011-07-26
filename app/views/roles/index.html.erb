@@ -1,0 +1,40 @@
+<div class="container">
+
+  <div class="sub_container_header" style="background-image: none;border:none;">
+    <span style="width:90%"><h2>Roles in <%=h @case_study.name %> Case</h2></span>
+    <% if current_user.admin %>
+      (<%= link_to "Add Role", new_role_path(:case_study=>@case_study.id)  %>)
+    <% end %>
+  </div>
+
+  <div class="sub_container_base" style="margin-top:-15px;">
+    <table style="width:100%;background-image: none;border:none;">
+      <tr style="background-image: none;border:none;">
+        <td style="background-image: none;border:none;">
+          <table style="width:50%">
+            <% i=0 %>
+            <% for role in @roles %>
+              <tr>
+                <td style="width:10%"><%=i+=1%></td>
+                <th style="border: 1px solid white">
+                  <% if current_user.admin %>
+                    <% if Briefing.find(:first,:conditions=>["role_id=?",role.id]) %>
+                      <%= link_to role.name, Briefing.find(:first,:conditions=>["role_id=?",role.id]) %>
+                      <%=image_tag("/images/bullet.png")%>
+                    <% else %>
+                      <%= link_to role.name, new_briefing_path(:role=>role.id) %>
+                      <%=image_tag("/images/bullet.png")%>
+                    <% end %>
+                  <% else %>
+                    <%= link_to role.name, Briefing.find(:first,:conditions=>["role_id=?",role.id]) %>
+                    <%=image_tag("/images/bullet.png")%>
+                  <% end %>
+                </th>
+              </tr>
+            <% end %>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

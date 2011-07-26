@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="sub_container_header">
+    <h1>Options for <%=h @issue.name %></h1>
+    <% if current_user.admin %>
+      <span style="float:right;text-align:center;margin-top:-60px;font-size:12px;color:black;text-decoration: none;">
+        <%=link_to image_tag("/images/options.png", :size=>"35x35"), new_option_value_path(:active_issue=>@issue.id), :title=>"Each Role can have different payoffs for the same option" %>
+        <br/>Role Payoffs
+      </span>
+    <% end %>
+  </div>
+
+
+  <div class="sub_container_base">
+
+    <table>
+      <tr>
+        <th>Issue</th>
+        <th>Options</th>
+      </tr>
+      <% for issue_option in @issue_options %>
+        <tr>
+          <td><%=h issue_option.issue.name %></td>
+          <td><%=h issue_option.option %></td>
+          <td><%= link_to "Edit", edit_issue_option_path(issue_option, :active_issue=>@issue.id) %></td>
+          <td><%= link_to "Destroy", issue_option, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <%= render :partial => 'form' %>
+  </div>
+</div>

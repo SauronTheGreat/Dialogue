@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="sub_container_header" style="background-image: none;border:none;">
+    <h3>Welcome to game creation</h3>
+  </div>
+
+  <div class="sub_container_base">
+    <table style="background-image: none;border:none;">
+      <tr style="background-image: none;border:none;">
+        <td style="background-image: none;border:none;">
+          <table>
+            <tr>
+
+              <th>Creation Method</th>
+              <th>Description</th>
+            </tr>
+
+            <tr>
+              <td><%= h link_to "Random ", :action => 'create_games', :id=>params[:id] %></td>
+              <td>Lets you create games randomly</td>
+            </tr>
+            <tr>
+              <td><%= h link_to "Manual", :action => 'create_games_manual', :id=>params[:id] %>
+              <td>Lets you assign roles to users</td>
+            </tr>
+            <tr>
+              <td><%= h link_to "Excel", :action => 'create_games_excel', :id=>params[:id] %></td>
+              <td>Lets you upload excel files</td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-image: none;border:none;">
+        </td>
+        <td style="background-image: none;border:none;">
+          <br/>
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+</div>

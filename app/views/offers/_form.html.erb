@@ -1,0 +1,16 @@
+<% form_for @offer do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :game_id %><br />
+    <%= f.text_field :game_id %>
+  </p>
+  <p>
+    <%= f.label :offerer %><br />
+    <%= f.text_field :offerer %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

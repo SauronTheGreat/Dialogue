@@ -1,0 +1,16 @@
+<div id="login_box" class="splash_container">
+
+<h2>Upload a CSV file to import into the database</h2>
+
+<% form_for @import, :url=>{:action =>'create',:sgid => @sgid } , :html => { :multipart => true }  do |f| %>
+
+  <%= f.file_field :csv %>
+  <select name="import[datatype]" size="1">
+    <option value="users_with_roles"> Users With Roles </option>
+    <option value="users_without_roles"> Users Without roles </option>
+  </select>
+
+  <%= f.submit "Import" %>
+
+<% end %>
+</div>

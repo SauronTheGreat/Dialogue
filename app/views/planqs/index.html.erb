@@ -1,0 +1,25 @@
+<% title "Planqs" %>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Meyou</th>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Type</th>
+  </tr>
+  <% for planq in @planqs %>
+    <tr>
+      <td><%=h planq.player_id %></td>
+      <td><%=h planq.meyou %></td>
+      <td><%=h planq.name %></td>
+      <td><%=h planq.value %></td>
+      <td><%=h planq.type %></td>
+      <td><%= link_to "Show", planq %></td>
+      <td><%= link_to "Edit", edit_planq_path(planq) %></td>
+      <td><%= link_to "Destroy", planq, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Planq", new_planq_path %></p>

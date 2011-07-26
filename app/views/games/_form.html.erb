@@ -1,0 +1,22 @@
+<div class="container">
+  <% form_for @game do |f| %>
+    <%= f.error_messages %>
+    <p>
+      <%= f.label :case_study_id %><br />
+      <%= f.text_field :case_study_id %>
+    </p>
+    <p>
+      <%= f.label :student_group_id %><br />
+      <%= f.text_field :student_group_id %>
+    </p>
+    <p>
+      <%= f.label :status %><br />
+      <%= f.check_box :status %>
+    </p>
+    <p>
+      <%= f.label :agreement_status %><br />
+      <%= f.check_box :agreement_status %>
+    </p>
+    <p><%= f.submit %></p>
+  <% end %>
+</div>

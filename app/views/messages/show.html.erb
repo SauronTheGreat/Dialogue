@@ -1,0 +1,22 @@
+<table style="border:none;">
+  <tr>
+    <td style="border:none;">
+      <p><strong>From:</strong> <%=h @message.author.name %></p>
+      <p><strong>To:</strong> <%=h @message.recipients.map(&:name).to_sentence %></p>
+      <p><strong>Received:</strong> <%= @message.created_at.to_s(:long) %></p>
+      <p><strong>Subject:</strong> <%= @message.subject %></p>
+    </td>
+    <td style="border:none;float:right;margin-right:50px;">
+      <% if @active_game.status %>
+        <%= link_to "Reply", reply_message_path(@message,:active_game=>@active_game.id,:active_player=>@player.id) %> |
+        <%= link_to "Reply All", reply_all_message_path(@message,:active_game=>@active_game.id,:active_player=>@player.id) %> |
+        <%= link_to "Forward", forward_message_path(@message,:active_game=>@active_game.id,:active_player=>@player.id) %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+<div id="message_container" style="padding:2px 20px;width:95%;height:280px;overflow:auto;background-image:url('/images/paper_texture.jpg');color:darkslateblue">
+  <pre><%=h @message.body %></pre>
+</div>
+<br/>
+

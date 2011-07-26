@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="sub_container_base">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @questionnaire.name %>
+</p>
+
+    <% user=User.find(@questionnaire.user_id) %>
+<p>
+  <b>Facilitator:</b>
+  <%= user.first_name+" "+user.last_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_questionnaire_path(@questionnaire) %> |
+<%= link_to 'Back', questionnaires_path %>    <br>
+<%= button_to 'Add a question' ,:controller => :questions,:action => 'new',:qid=>@questionnaire.id %> <br>
+<%= button_to 'Show all questions' ,:controller => :questions,:action => 'index',:qid=>@questionnaire.id %>
+<%= link_to 'Use this',use_questionnaire_path(:id=>params[:sgid],:qid=>@questionnaire.id,:flag=>params[:flag]) %>
+
+  </div>
+    </div>
+

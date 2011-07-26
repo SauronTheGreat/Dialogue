@@ -1,0 +1,42 @@
+<% if params[:prequestionnaire].to_i ==1 %>
+
+    <% s='create' %>
+
+
+<% else %>
+    <% s='createpost' %>
+<% end %>
+<% form_tag :action => s do %>
+
+
+    <% @player_answers.each_with_index do |player_answer, index| %>
+        <% fields_for "player_answers[#{index}]", player_answer do |f| %>
+
+            <%= f.hidden_field :player_id, :value=>params[:id].to_i %>
+
+            <%= f.hidden_field :answer_after_self_scoring, :value=>0 %>
+
+
+            <%= f.hidden_field :question_id, :value=>@questions[index].id %>
+            <ul>
+              <li> <%= @questions[index].statement %>  </li>
+              <br>
+
+
+              <% @questions[index].options.each do |option| %>
+                  <%= f.radio_button :answer, option.option_number %>       <%= option.name %>  <br>
+
+
+              <% end %>
+            </ul>
+        <% end %>
+
+
+
+
+
+    <% end %>
+
+    <%= submit_tag %>
+<% end %>
+

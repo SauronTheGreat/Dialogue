@@ -1,0 +1,20 @@
+<% form_for @game_data do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :game_id %><br />
+    <%= f.text_field :game_id %>
+  </p>
+  <p>
+    <%= f.label :data_of %><br />
+    <%= f.text_field :data_of %>
+  </p>
+  <p>
+    <%= f.label :data_is %><br />
+    <%= f.text_field :data_is %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

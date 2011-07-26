@@ -1,0 +1,151 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "educators" [0m
+
+
+Processing EducatorsController#create (for 0.0.0.0 at 2011-03-26 06:24:31) [POST]
+  Parameters: {"educator"=>{}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "educators" [0m
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#destroy (for 0.0.0.0 at 2011-03-26 06:24:31) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mEducator Load (0.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#edit (for 0.0.0.0 at 2011-03-26 06:24:31) [GET]
+  Parameters: {"id"=>"980190962"}
+
+
+Processing EducatorsController#index (for 0.0.0.0 at 2011-03-26 06:24:31) [GET]
+
+
+Processing EducatorsController#new (for 0.0.0.0 at 2011-03-26 06:24:31) [GET]
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#show (for 0.0.0.0 at 2011-03-26 06:24:32) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mEducator Load (0.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#update (for 0.0.0.0 at 2011-03-26 06:24:32) [PUT]
+  Parameters: {"educator"=>{}, "id"=>"980190962"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "educators" [0m
+
+
+Processing EducatorsController#create (for 0.0.0.0 at 2011-03-26 06:26:22) [POST]
+  Parameters: {"educator"=>{}}
+  [4;35;1mEducator Create (1.0ms)[0m   [0mINSERT INTO "educators" ("name", "created_at", "updated_at", "client_id", "user_id") VALUES(NULL, '2011-03-26 00:56:22', '2011-03-26 00:56:22', NULL, NULL)[0m
+Redirected to http://test.host/educators/980190963
+Completed in 7ms (DB: 3) | 302 Found [http://test.host/educators?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "educators" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "educators" [0m
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#destroy (for 0.0.0.0 at 2011-03-26 06:26:22) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mEducator Load (0.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+  [4;36;1mEducator Destroy (1.0ms)[0m   [0;1mDELETE FROM "educators" WHERE "id" = 980190962[0m
+Redirected to http://test.host/educators
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/educators/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "educators" [0m
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#edit (for 0.0.0.0 at 2011-03-26 06:26:22) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mEducator Load (0.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering educators/edit
+
+
+Processing EducatorsController#index (for 0.0.0.0 at 2011-03-26 06:26:23) [GET]
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" [0m
+Rendering template within layouts/application
+Rendering educators/index
+
+
+Processing EducatorsController#new (for 0.0.0.0 at 2011-03-26 06:26:23) [GET]
+Rendering template within layouts/application
+Rendering educators/new
+  [4;35;1mEducator Load (1.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#show (for 0.0.0.0 at 2011-03-26 06:26:23) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+Rendering template within layouts/application
+Rendering educators/show
+  [4;35;1mEducator Load (1.0ms)[0m   [0mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+
+
+Processing EducatorsController#update (for 0.0.0.0 at 2011-03-26 06:26:23) [PUT]
+  Parameters: {"educator"=>{}, "id"=>"980190962"}
+  [4;36;1mEducator Load (0.0ms)[0m   [0;1mSELECT * FROM "educators" WHERE ("educators"."id" = 980190962) [0m
+Redirected to http://test.host/educators/980190962
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/educators/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "rules" [0m
+
+
+Processing RulesController#create (for 0.0.0.0 at 2011-06-01 17:46:40) [POST]
+  Parameters: {"rule"=>{}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "rules" [0m
+  [4;36;1mRule Load (0.0ms)[0m   [0;1mSELECT * FROM "rules" WHERE ("rules"."id" = 980190962) [0m
+
+
+Processing RulesController#destroy (for 0.0.0.0 at 2011-06-01 17:46:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mRule Load (1.0ms)[0m   [0mSELECT * FROM "rules" WHERE ("rules"."id" = 980190962) [0m
+
+
+Processing RulesController#edit (for 0.0.0.0 at 2011-06-01 17:46:40) [GET]
+  Parameters: {"id"=>"980190962"}
+
+
+Processing RulesController#index (for 0.0.0.0 at 2011-06-01 17:46:40) [GET]
+
+
+Processing RulesController#new (for 0.0.0.0 at 2011-06-01 17:46:40) [GET]
+  [4;36;1mRule Load (1.0ms)[0m   [0;1mSELECT * FROM "rules" WHERE ("rules"."id" = 980190962) [0m
+
+
+Processing RulesController#show (for 0.0.0.0 at 2011-06-01 17:46:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mRule Load (1.0ms)[0m   [0mSELECT * FROM "rules" WHERE ("rules"."id" = 980190962) [0m
+
+
+Processing RulesController#update (for 0.0.0.0 at 2011-06-01 17:46:41) [PUT]
+  Parameters: {"id"=>"980190962", "rule"=>{}}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "student_group_rules" [0m
+
+
+Processing StudentGroupRulesController#create (for 0.0.0.0 at 2011-06-01 17:46:41) [POST]
+  Parameters: {"student_group_rule"=>{}}
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "student_group_rules" [0m
+  [4;36;1mStudentGroupRule Load (0.0ms)[0m   [0;1mSELECT * FROM "student_group_rules" WHERE ("student_group_rules"."id" = 980190962) [0m
+
+
+Processing StudentGroupRulesController#destroy (for 0.0.0.0 at 2011-06-01 17:46:41) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStudentGroupRule Load (0.0ms)[0m   [0mSELECT * FROM "student_group_rules" WHERE ("student_group_rules"."id" = 980190962) [0m
+
+
+Processing StudentGroupRulesController#edit (for 0.0.0.0 at 2011-06-01 17:46:41) [GET]
+  Parameters: {"id"=>"980190962"}
+
+
+Processing StudentGroupRulesController#index (for 0.0.0.0 at 2011-06-01 17:46:42) [GET]
+
+
+Processing StudentGroupRulesController#new (for 0.0.0.0 at 2011-06-01 17:46:42) [GET]
+  [4;36;1mStudentGroupRule Load (0.0ms)[0m   [0;1mSELECT * FROM "student_group_rules" WHERE ("student_group_rules"."id" = 980190962) [0m
+
+
+Processing StudentGroupRulesController#show (for 0.0.0.0 at 2011-06-01 17:46:42) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStudentGroupRule Load (0.0ms)[0m   [0mSELECT * FROM "student_group_rules" WHERE ("student_group_rules"."id" = 980190962) [0m
+
+
+Processing StudentGroupRulesController#update (for 0.0.0.0 at 2011-06-01 17:46:42) [PUT]
+  Parameters: {"student_group_rule"=>{}, "id"=>"980190962"}

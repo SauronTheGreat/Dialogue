@@ -1,0 +1,20 @@
+<% title "Issue Option" %>
+
+<p>
+  <strong>Issue:</strong>
+  <%=h @issue_option.issue_id %>
+</p>
+<p>
+  <strong>Option:</strong>
+  <%=h @issue_option.option %>
+</p>
+<p>
+  <strong>Weightage:</strong>
+  <%=h @issue_option.weightage %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_issue_option_path(@issue_option) %> |
+  <%= link_to "Destroy", @issue_option, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", issue_options_path %>
+</p>

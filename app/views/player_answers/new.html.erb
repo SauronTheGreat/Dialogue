@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="sub_container_base">
+
+    <% if params[:prequestionnaire].to_i==1 %>
+<h1>Pre Questionnaire</h1>
+        <% else %>
+    <h1>Post Questionnaire</h1>
+        <% end %>
+    <% if params[:error] %>
+    <h3><%= params[:error] %></h3>
+        <% end %>
+
+<%= render 'form' %>
+
+
+
+  </div>
+</div>

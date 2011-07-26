@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="sub_container_header">
+    <h1>Briefings in <%=h @role.name %></h1>
+    <span style="float:right;text-align:center;margin-top:-60px;"><a href="/cases/new" style="font-size:12px;color:black;text-decoration: none;"> <img src="images/users.png" style="width:35px;height:35px;"/><br/>Add Client</a></span>
+  </div>
+
+  <div class="sub_container_base">
+
+    <table>
+      <tr>
+        <th>Briefing Note</th>
+      </tr>
+      <% for briefing in @briefings %>
+        <tr>
+          <td><%=h briefing.briefing_note %></td>
+          <td><%= link_to "Show", briefing %></td>
+          <td><%= link_to "Edit", edit_briefing_path(briefing,:role=>@role.id) %></td>
+          <td><%= link_to "Destroy", briefing, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <p><%= link_to "New briefing", new_briefing_path %></p>
+  </div>
+</div>

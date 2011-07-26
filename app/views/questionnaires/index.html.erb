@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="sub_container_header" style="background-image: none;border:none;">
+    <h2>Questionnaire</h2>
+
+  </div>
+
+  <div class='sub_container_base'>
+
+    <h1>Listing questionnaires</h1>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Owner</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @questionnaires.each do |questionnaire| %>
+          <tr>
+            <td><%= questionnaire.name %></td>
+            <td><%= User.find(questionnaire.user_id).first_name + " "+User.find(questionnaire.user_id).last_name %></td>
+            <td><%= link_to 'Show', questionnaire %></td>
+            <td><%= link_to 'Edit', edit_questionnaire_path(questionnaire) %></td>
+            <td><%= link_to 'Destroy', questionnaire, :confirm => 'Are you sure?', :method => :delete %></td>
+            <td><%= link_to 'Add a question', :controller => :questions, :action => 'new', :qid=>questionnaire.id %></td>
+            <td><%= link_to 'Show all question', :controller => :questions, :action => 'index', :qid=>questionnaire.id %></td>
+            <td><%= link_to 'Use this',:controller => :student_groups,:action => 'populate_db',:id=>params[:sgid],:qid=>questionnaire.id,:flag=>params[:flag] %></td>
+          </tr>
+      <% end %>
+    </table>
+
+    <br/>
+
+    <%= button_to 'Add New Questionnaire', new_questionnaire_path %>
+  </div>
+</div>

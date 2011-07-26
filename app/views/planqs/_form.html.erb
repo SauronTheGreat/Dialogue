@@ -1,0 +1,24 @@
+<% form_for @planq do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :player_id %><br />
+    <%= f.text_field :player_id %>
+  </p>
+  <p>
+    <%= f.label :meyou %><br />
+    <%= f.check_box :meyou %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.check_box :type %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

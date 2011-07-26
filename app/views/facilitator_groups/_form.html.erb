@@ -1,0 +1,16 @@
+<% form_for @facilitator_group do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :client %><br />
+    <%= f.select :client_id, Client.all.collect{|s| [s.name, s.id]} %>
+  </p>
+  <p>
+    <%= f.label :user%><br />
+    <%= f.select :user_id, User.all(:conditions=>['admin=? or educator=?',TRUE,TRUE]).collect{|s| [s.username, s.id]} %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,20 @@
+<% title "Option Value" %>
+
+<p>
+  <strong>Issue Option:</strong>
+  <%=h @option_value.issue_option_id %>
+</p>
+<p>
+  <strong>Role:</strong>
+  <%=h @option_value.role_id %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%=h @option_value.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_option_value_path(@option_value) %> |
+  <%= link_to "Destroy", @option_value, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", option_values_path %>
+</p>

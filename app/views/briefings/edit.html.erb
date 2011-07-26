@@ -1,0 +1,20 @@
+<div id="login_box" class="splash_container" style="width:70%">
+
+  <h2>Briefing for <%= Role.find(params[:role]).name  %></h2>
+  <span style="float:left;margin-right: 20px;">
+    <%= link_to image_tag("/images/back_button.png", :size=>"35x35"), briefings_path %>
+  </span>
+
+  <% form_for @briefing do |f| %>
+    <%= f.error_messages %>
+    <p>
+      <%= f.hidden_field :role_id, :value=>params[:role].id %>
+    </p>
+    <p>
+      <%= f.text_area :briefing_note, :size=>"100x15" %>
+    </p>
+    <%= f.submit %>
+
+
+  <% end %>
+</div>

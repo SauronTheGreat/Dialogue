@@ -1,0 +1,23 @@
+<% title "Game Datas" %>
+
+<table>
+  <tr>
+    <th>Game</th>
+    <th>Data Of</th>
+    <th>Data Is</th>
+    <th>Value</th>
+  </tr>
+  <% for game_data in @game_datas %>
+    <tr>
+      <td><%=h game_data.game_id %></td>
+      <td><%=h game_data.data_of %></td>
+      <td><%=h game_data.data_is %></td>
+      <td><%=h game_data.value %></td>
+      <td><%= link_to "Show", game_data %></td>
+      <td><%= link_to "Edit", edit_game_data_path(game_data) %></td>
+      <td><%= link_to "Destroy", game_data, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Game Data", new_game_data_path %></p>

@@ -1,0 +1,23 @@
+<% title "Games" %>
+
+<table>
+  <tr>
+    <th>Case Study</th>
+    <th>Student Group</th>
+    <th>Status</th>
+    <th>Agreement Status</th>
+  </tr>
+  <% for game in @games %>
+    <tr>
+      <td><%=h game.case_study_id %></td>
+      <td><%=h game.student_group_id %></td>
+      <td><%=h game.status %></td>
+      <td><%=h game.agreement_status %></td>
+      <td><%= link_to "Show", game %></td>
+      <td><%= link_to "Edit", edit_game_path(game) %></td>
+      <td><%= link_to "Destroy", game, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Game", new_game_path %></p>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="sub_container_header">
+    <h3>Case Study:<%=h @issue.case_study.name %></h3>
+  </div>
+
+  <div class="sub_container_base">
+   <table style="width:100%;background-image: none;border:none;">
+    <tr style="background-image: none;border:none;">
+      <td style="width:10%;background-image: none;border:none;">
+        <span style="float:left;margin-right: 20px;">
+          <%= link_to image_tag("/images/back_button.png", :size=>"35x35"), issues_path(:case_study=>@issue.case_study.id), :title=>"Back to the Case Study" %>
+        </span><br/><br/><br/>
+      </td>
+      <td style="background-image: none;border:none;">
+          <p>
+            <%= @issue.name %>
+          </p>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>

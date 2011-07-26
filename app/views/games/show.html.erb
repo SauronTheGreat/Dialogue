@@ -1,0 +1,24 @@
+<% title "Game" %>
+
+<p>
+  <strong>Case Study:</strong>
+  <%=h @game.case_study_id %>
+</p>
+<p>
+  <strong>Student Group:</strong>
+  <%=h @game.student_group_id %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%=h @game.status %>
+</p>
+<p>
+  <strong>Agreement Status:</strong>
+  <%=h @game.agreement_status %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_game_path(@game) %> |
+  <%= link_to "Destroy", @game, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", games_path %>
+</p>

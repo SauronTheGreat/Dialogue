@@ -1,0 +1,20 @@
+<% title "Offer" %>
+
+<p>
+  <strong>Game:</strong>
+  <%=h @offer.game_id %>
+</p>
+<p>
+  <strong>Offerer:</strong>
+  <%=h @offer.offerer %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%=h @offer.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_offer_path(@offer) %> |
+  <%= link_to "Destroy", @offer, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", offers_path %>
+</p>

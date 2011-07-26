@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="sub_container_header" style="background-image: none;border:none;">
+    <h3>Please make your choice : </h3>
+
+  </div>
+
+
+  <div class="sub_container_base">
+
+    <table style="background-image: none;border:none;">
+      <tr style="background-image: none;border:none;">
+        <td style="background-image: none;border:none;">
+          <table>
+            <% if !params[:msg].nil? %>
+                <p>The excel file you uploaded had some validation errors.</p>
+
+                <p>Same role is assigned to more than permitted number of students </p>
+
+                <p>Please try again</p>
+            <% end %>
+
+            <tr>
+              <th>What</th>
+              <th>How</th>
+            </tr>
+            <tr>
+              <td>Download the pre populated File</td>
+              <td><%= link_to "Download", download_data_path %></td>
+            </tr>
+            <tr>
+              <td>Import the completely filled files</td>
+              <td><%= link_to "Import", :controller => :imports, :action => 'new', :sgid=>params[:id] %></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+    </table>
+
+
+  </div>
+</div>

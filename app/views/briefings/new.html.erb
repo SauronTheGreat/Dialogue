@@ -1,0 +1,17 @@
+<div id="login_box" class="splash_container" style="width:70%">
+
+<h2>Briefing for <%= @role.name %></h2>
+
+<% form_for @briefing do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.hidden_field :role_id, :value=>@role.id %>
+  </p>
+  <p>
+    <%= f.text_area :briefing_note, :size=>"100x15" %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+<p><%= link_to "Back to List", briefings_path %></p>
+</div>

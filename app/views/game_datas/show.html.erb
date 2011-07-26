@@ -1,0 +1,24 @@
+<% title "Game Data" %>
+
+<p>
+  <strong>Game:</strong>
+  <%=h @game_data.game_id %>
+</p>
+<p>
+  <strong>Data Of:</strong>
+  <%=h @game_data.data_of %>
+</p>
+<p>
+  <strong>Data Is:</strong>
+  <%=h @game_data.data_is %>
+</p>
+<p>
+  <strong>Value:</strong>
+  <%=h @game_data.value %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_game_data_path(@game_data) %> |
+  <%= link_to "Destroy", @game_data, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", game_datas_path %>
+</p>

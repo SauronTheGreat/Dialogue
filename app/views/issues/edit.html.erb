@@ -1,0 +1,37 @@
+<div id="login_box" class="splash_container" style="width:70%">
+
+  <h2>Issue for <%= @case_study.name %></h2>
+
+  <% form_for @issue do |f| %>
+    <%= f.error_messages %>
+    <p>
+      <%= f.hidden_field :case_study_id, :value=>@case_study.id %>
+    </p>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <% if @case_study.eval_type %>
+        <%= f.label :flag %><br />
+        <% if Issue.find(:first,:conditions=>['case_study_id=? and flag=?',@case_study.id,"Main Offer Type Issue"]) %>
+          <%= f.select :flag, [["Ancillary Binary Type Issue","Ancillary Binary Type Issue"]] %>
+        <% else %>
+          <%= f.select :flag, [["Main Offer Type Issue","Main Offer Type Issue"],["Ancillary Binary Type Issue","Ancillary Binary Type Issue"]] %>
+        <% end %>
+      <% else %>
+        <%= f.label :flag %><br />
+        <% if Issue.find(:first,:conditions=>['case_study_id=? and flag=?',@case_study.id,"Main Scorecard Issue"]) %>
+          <%= f.select :flag, [["Ancillary Scorecard Issue","Ancillary Scorecard Issue"]] %>
+        <% else %>
+          <%= f.select :flag, [["Main Scorecard Issue","Main Scorecard Issue"],["Ancillary Scorecard Issue","Ancillary Scorecard Issue"]] %>
+        <% end %>
+        <%= f.label :weightage %><br />
+        <%= f.text_field :weightage %>
+      <% end %>
+    </p>
+    <p><%= f.submit %></p>
+  <% end %>
+
+  <p><%= link_to "Back to List", issues_path %></p>
+</div>
