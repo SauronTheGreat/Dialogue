@@ -17,10 +17,16 @@ gem 'prawn'
 gem 'wkhtmltopdf'
 gem 'wkhtmltopdf-binary'
 gem 'pdfkit'
+
+
+
+
+
+
+
 group :development do
 #  gem "rails-erd"
   gem "sqlite3-ruby", :require => "sqlite3"
-
 
 
 

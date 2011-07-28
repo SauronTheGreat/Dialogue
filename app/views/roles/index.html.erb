@@ -13,6 +13,9 @@
         <td style="background-image: none;border:none;">
           <table style="width:50%">
             <% i=0 %>
+			<% if @roles.count ==0 %>
+			  <td>No Roles Defined Yet...</td>
+			  <% end %>
             <% for role in @roles %>
               <tr>
                 <td style="width:10%"><%=i+=1%></td>

@@ -1,6 +1,7 @@
 <div class="container">
 
   <div class="sub_container_header" style="background-image: none;border:none;">
+	<% if @questionnaires.count > 0 %>
     <h2>Questionnaire</h2>
 
   </div>
@@ -37,6 +38,11 @@
 
     <br/>
 
-    <%= button_to 'Add New Questionnaire', new_questionnaire_path %>
+	 <%= link_to 'Create New Questioannaire',new_questionnaire_path(:flag=>params[:flag], :sgid=>params[:sgid]) %>
+	   <% else %>
+	  <h3>No Questionnaires found..</h3>
+
+   <%= link_to 'Create New Questioannaire',new_questionnaire_path(:flag=>params[:flag], :sgid=>params[:sgid]) %>
+	  <% end %>
   </div>
 </div>

@@ -37,7 +37,7 @@
       <tr>
 
       <td><%= link_to 'Edit', edit_question_path(@question) %> |
-      <%= link_to 'Question Index', questions_path %>           </td>
+      <%= link_to 'Question Index', questions_path(:qid=>@question.questionnaire_id) %>           </td>
       </tr>
 
         <tr>

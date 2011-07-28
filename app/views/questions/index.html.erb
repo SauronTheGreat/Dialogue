@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="sub_container_header" style="background-image: none;border:none;">
-    <h2>Questions</h2>
+    <h2>Questions for  <%= @questionnaire.name %></h2>
 
   </div>
 
@@ -14,7 +14,7 @@
     <table>
       <tr>
         <th>Statement</th>
-        <th>Questionnaire</th>
+
         <th>Type</th>
 
         <th>Answer</th>
@@ -27,7 +27,7 @@
       <% @questions.each do |question| %>
           <tr>
             <td><%= question.statement %></td>
-            <td><%= Questionnaire.find(question.questionnaire_id).name %></td>
+
             <td><%= Type.find(question.type_id).name %></td>
 
             <td><%= question.answer %></td>

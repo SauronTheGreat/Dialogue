@@ -71,6 +71,7 @@ class OptionsController < ApplicationController
   # POST /options.xml
   def create
     #@option = Option.new(params[:option])
+
     f=0
      @options = params[:options].values.collect{ |option| Option.new(option) }
      @options.each do |o|
@@ -80,10 +81,11 @@ class OptionsController < ApplicationController
          f=0
                    end
 
-     end
+	 end
+	@question=Question.find(@options[0].question_id)
     respond_to do |format|
       if f==1
-        format.html { redirect_to(:controller => :questions,:action=>"index", :notice => 'Options were successfully created.') }
+        format.html { redirect_to(:controller => :questions,:action=>"index",:qid=>@question.questionnaire_id, :notice => 'Options were successfully created.') }
         format.xml  { render :xml => @option, :status => :created, :location => @option }
       else
         format.html { render :action => "new" }
