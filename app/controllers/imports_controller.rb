@@ -10,7 +10,7 @@ class ImportsController < ApplicationController
     @import = Import.new(params[:import])
 
     respond_to do |format|
-      if @import.save!
+      if @import.save
         flash[:notice] = 'CSV data was successfully imported.'
         format.html { redirect_to :action=>'show', :id=>@import.id, :sgid=>@sgid }
       else

@@ -2,7 +2,9 @@
 
 <h2>Upload a CSV file to import into the database</h2>
 
+  <p><%= flash[:error] %></p>
 <% form_for @import, :url=>{:action =>'create',:sgid => @sgid } , :html => { :multipart => true }  do |f| %>
+
 
   <%= f.file_field :csv %>
   <select name="import[datatype]" size="1">

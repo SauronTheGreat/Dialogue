@@ -7,6 +7,6 @@ class Import < ActiveRecord::Base
 #    :access_key_id => ENV['S3_KEY'],
 #    :secret_access_key => ENV['S3_SECRET'],
 #  }
-  validates_attachment_presence :csv
+  validates_attachment_presence :csv ,:message=>"Please attach a file first ! "
 	validates_attachment_content_type :csv, :content_type => ['text/csv','text/comma-separated-values','text/csv','application/csv','application/excel','application/vnd.ms-excel','application/vnd.msexcel','text/anytext','text/plain']
 end

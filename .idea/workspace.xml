@@ -3,19 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1390f2cd-fd95-4b88-902f-b824cb47c486" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Files/abc.xls" afterPath="$PROJECT_DIR$/public/Files/abc.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/case_studies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/case_studies_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/imports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/imports_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/case_study.rb" afterPath="$PROJECT_DIR$/app/models/case_study.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/metric.rb" afterPath="$PROJECT_DIR$/app/models/metric.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/question.rb" afterPath="$PROJECT_DIR$/app/models/question.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/questionnaire.rb" afterPath="$PROJECT_DIR$/app/models/questionnaire.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/rule.rb" afterPath="$PROJECT_DIR$/app/models/rule.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rules/new.html.erb" afterPath="$PROJECT_DIR$/app/views/rules/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_groups/assign_roles_manual.html.erb" afterPath="$PROJECT_DIR$/app/views/student_groups/assign_roles_manual.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_groups/create_games.html.erb" afterPath="$PROJECT_DIR$/app/views/student_groups/create_games.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/import.rb" afterPath="$PROJECT_DIR$/app/models/import.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/imports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/imports/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb" afterPath="$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="Dialogue1.0.iws" />
@@ -39,46 +32,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rule.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/rule.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rules_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rules_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/rules/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="384" selection-end="384" vertical-scroll-proportion="-11.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="student_groups_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/student_groups_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="554" column="32" selection-start="13023" selection-end="13023" vertical-scroll-proportion="0.0">
+            <state line="565" column="5" selection-start="13316" selection-end="13316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case_study.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/case_study.rb">
+      <file leaf-file-name="create_games_excel.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="600" selection-end="600" vertical-scroll-proportion="0.7484277">
+            <state line="27" column="13" selection-start="745" selection-end="745" vertical-scroll-proportion="0.69863015">
               <folding />
             </state>
           </provider>
@@ -101,10 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/questions/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/questions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/options/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/options_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/passwords/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_devise_links.erb" />
         <option value="$PROJECT_DIR$/app/controllers/case_studies_controller.rb" />
@@ -115,8 +77,12 @@
         <option value="$PROJECT_DIR$/app/views/rules/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/student_groups/create_games.html.erb" />
         <option value="$PROJECT_DIR$/app/views/student_groups/assign_roles_manual.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/case_study.rb" />
+        <option value="$PROJECT_DIR$/app/models/import.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/imports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/imports/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/student_groups_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb" />
       </list>
     </option>
   </component>
@@ -522,7 +488,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="The forgot password view problem is solved now !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Most of the problems identified on 27/7/2011 are sorted (Hopefully !!)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -537,39 +503,12 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Small commit..made some trivial changes" />
     <MESSAGE value="The forgot password view problem is solved now !" />
+    <MESSAGE value="Most of the problems identified on 27/7/2011 are sorted (Hopefully !!)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/clients_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/case_studies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="65" selection-start="693" selection-end="693" vertical-scroll-proportion="0.78125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/player_answer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="34" selection-start="323" selection-end="323" vertical-scroll-proportion="0.39534885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110722055815_studentroutingdefault.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -640,16 +579,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/student_groups_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/case_study.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="32" selection-start="13023" selection-end="13023" vertical-scroll-proportion="0.0">
+        <state line="14" column="2" selection-start="600" selection-end="600" vertical-scroll-proportion="0.7484277">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/case_study.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/import.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="600" selection-end="600" vertical-scroll-proportion="0.7484277">
+        <state line="9" column="78" selection-start="322" selection-end="322" vertical-scroll-proportion="0.4811321">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/imports_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.21383648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/imports/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="125" selection-end="125" vertical-scroll-proportion="0.22295082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/student_groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="565" column="5" selection-start="13316" selection-end="13316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/student_groups/create_games_excel.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="745" selection-end="745" vertical-scroll-proportion="0.69863015">
           <folding />
         </state>
       </provider>

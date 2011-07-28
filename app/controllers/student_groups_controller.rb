@@ -68,7 +68,7 @@ class StudentGroupsController < ApplicationController
 	  @studentlist << User.find(s.user_id)
 	end
 
-	  #this filters the allocated students
+	#this filters the allocated students
 	@tmps=Temp.find(:all)
 	if (@tmps.count!=0)
 	  @tmps.each do |t|
@@ -83,7 +83,7 @@ class StudentGroupsController < ApplicationController
 	Temp.destroy_all
 
 
-	  #This is where pairing code comes
+	#This is where pairing code comes
 
 	@games_ids=Array.new
 	@number_of_paired_players=Array.new
@@ -125,9 +125,9 @@ class StudentGroupsController < ApplicationController
 	  end
 	end
 
-	  #now we have the information which player is linked to how many players and who are the players
+	#now we have the information which player is linked to how many players and who are the players
 
-	  #end of pairing code
+	#end of pairing code
 
 
 	@t=Array.new
@@ -175,7 +175,7 @@ class StudentGroupsController < ApplicationController
 
 	  @rolecount.times do |rc|
 		@new_player=Player.new
-		  # r=rand((@studentlist.count-1))
+		# r=rand((@studentlist.count-1))
 
 		@new_player.user_id=@studentlist[@t[i].to_i].id
 		@t.delete_at(i)
@@ -272,7 +272,7 @@ class StudentGroupsController < ApplicationController
 	@rolelist=Role.all(:conditions=>['case_study_id=?', @student_group.case_study_id])
 	s="player"
 
-	  #perform  validation
+	#perform  validation
 	tmp=0
 	@msg=1
 	@flag=0
@@ -281,9 +281,9 @@ class StudentGroupsController < ApplicationController
 
 	  s="player"+(r.id).to_s
 	  @name=params[s.to_sym]
-		#@name=@name[@name.size-1].to_i
+	  #@name=@name[@name.size-1].to_i
 	  @name=@name.partition("  ")[2].to_i
-		#@name=@name.partition(" ")[2].to_s+" "
+	  #@name=@name.partition(" ")[2].to_s+" "
 	  if (tmp==@name)
 		@flag=1
 	  end
@@ -311,12 +311,12 @@ class StudentGroupsController < ApplicationController
 		s="player"+(r.id).to_s
 		@name=params[s.to_sym]
 		@name=@name.partition("  ")[2].to_i
-		  # @name=@name.partition(" ")[2].to_s+" "
-		  #@name=@name[@name.size-1].to_i
+		# @name=@name.partition(" ")[2].to_s+" "
+		#@name=@name[@name.size-1].to_i
 		@user=User.find(@name)
 
 
-		  #This creates a new player
+		#This creates a new player
 		@new_player=Player.new
 		@new_player.user_id=@user.id
 		@new_player.game_id=@make_game.id
@@ -326,7 +326,7 @@ class StudentGroupsController < ApplicationController
 		@student_routing.player_id=@new_player.id
 		@student_routing.save
 		@players << @new_player
-		  #I am putting all allocated players(users ids of the players)  in the database
+		#I am putting all allocated players(users ids of the players)  in the database
 		@tmp=Temp.new
 		@tmp.user_id=@new_player.user_id
 		@tmp.save
@@ -336,7 +336,7 @@ class StudentGroupsController < ApplicationController
 
 
 	  @players.each { |p| @x << p.user_id }
-		#This stores info about unallocated users
+	  #This stores info about unallocated users
 	  @tmps=Temp.find(:all)
 	  @leftover_students=Array.new
 	  @student_group_user=StudentGroupUser.find_all_by_student_group_id(@student_group.id)
@@ -360,7 +360,7 @@ class StudentGroupsController < ApplicationController
 	  end
 
 
-		# here all issues and scorecards are created
+	  # here all issues and scorecards are created
 	  @allissues=Issue.all(:conditions=>['case_study_id=?', @student_group.case_study_id])
 	  @allroles=Role.all(:conditions=>['case_study_id=?', @student_group.case_study_id])
 	  @allgames=Game.all(:conditions=>['student_group_id=?', @student_group.id])
@@ -393,7 +393,7 @@ class StudentGroupsController < ApplicationController
 	if (params[:msg].nil?)
 
 	  @student_group = StudentGroup.find(params[:id])
-		#@book = Spreadsheet.open 'C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abc.txt'
+	  #@book = Spreadsheet.open 'C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abc.txt'
 	  @book = Spreadsheet::Workbook.new
 	  sheet1 = @book.create_worksheet
 	  @rolelist=Role.all(:conditions=>['case_study_id=?', @student_group.case_study_id])
@@ -412,7 +412,7 @@ class StudentGroupsController < ApplicationController
 		@studentlist << User.find(s.user_id)
 	  end
 
-		#here the dynamic data from student group gets populated
+	  #here the dynamic data from student group gets populated
 	  i=1
 	  sheet1[0, 0]="Student ID"
 	  sheet1[0, 1]="Student Name"
@@ -425,7 +425,7 @@ class StudentGroupsController < ApplicationController
 		sheet1[i, 1]=s.first_name+s.last_name
 		sheet1[i, 2]= " "
 		i=i+1
-		@book.write 'C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abc.xls'
+		@book.write "#{Rails.root}/public/Files/Game_Creation.xls"
 
 
 	  end
@@ -447,15 +447,15 @@ class StudentGroupsController < ApplicationController
 	end
 
 
-	  #my format is:
-	  # studentid,student name,rolename
+	#my format is:
+	# studentid,student name,rolename
 
 	@x=Array.new
 	@student_group = StudentGroup.find(params[:id])
 	@import =Import.find(params[:imid])
 	@path=@import.csv.path.to_s
 
-	  # book = Spreadsheet.open 'C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abcd.xls'
+	# book = Spreadsheet.open 'C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abcd.xls'
 	book=Spreadsheet.open @path
 	sheet1 = book.worksheet 0
 
@@ -464,41 +464,52 @@ class StudentGroupsController < ApplicationController
 	@student_ids=Array.new
 
 	for i in 1..@studentlist.count
-	  @student_names << sheet1[i, 1]
-	  @student_ids << sheet1[i, 0]
-	  @role_names << sheet1[i, 2]
+	  if (sheet1[i, 1]!=" ")
+		@student_names << sheet1[i, 1]
+	  end
+	  if (sheet1[i, 0]!=" ")
+		@student_ids << sheet1[i, 0]
+	  end
+	  if (sheet1[i, 2]!=" ")
+		@role_names << sheet1[i, 2]
+	  end
 	end
 
 
 	@number_of_games=@studentlist.count/@rolelist.count
 
-	  #this is the validation code
+	#this is the validation code
 	@k=Array.new
 	for i in 0..@rolelist.count
 	  @k[i]=0
 	end
-	@role=Role.new
-	tmp=" "
-	i=0
-	@role_names.each do |r|
-	  if (r.to_s!="Unallocated")
-		@role=Role.find_by_name(@role_names[i])
-		@k[@role.id]=@k[@role.id]+1
+
+
+	if (!@role_names.blank? and !@student_names.blank? and !@student_ids.blank?)
+	  @role=Role.new
+	  tmp=" "
+	  i=0
+	  @role_names.each do |r|
+		if (r.to_s!="Unallocated")
+		  @role=Role.find_by_name(@role_names[i])
+		  @k[@role.id]=@k[@role.id]+1
+		end
+		i=i+1
+
 	  end
-	  i=i+1
+	else
 
+	  redirect_to :action => 'create_games_excel', :id => params[:id], :msg => "Blank Columns Found !!" and return
 	end
-
-
 	i=0
 	@k.each do |m|
 	  if (@k[i].to_i > @number_of_games)
 		@k=1
-		redirect_to :action => 'create_games_excel', :id => params[:id], :msg => 1
+		redirect_to :action => 'create_games_excel', :id => params[:id], :msg => "Role assignment error ! "
 	  end
 	  i=i+1
 	end
-	  #if the control comes here that means the document is valid
+	#if the control comes here that means the document is valid
 
 	@number_of_games.times do
 	  @make_game=Game.new
@@ -522,7 +533,7 @@ class StudentGroupsController < ApplicationController
 		@student_routing=StudentRouting.new
 		@student_routing.player_id=@new_player.id
 		@student_routing.save
-      	@players << @new_player
+		@players << @new_player
 	  else
 		@new_player.role_id=0
 		@unallocated_students << @new_player
@@ -551,7 +562,8 @@ class StudentGroupsController < ApplicationController
   end
 
   def download_data
-	send_file ("#{Rails.root}/public/Files/abc.xls")
+	send_file ("#{Rails.root}/public/Files/Game_Creation.xls")
+	#redirect_to :action => 'create_games_excel',:flag=>1
   end
 
 
@@ -565,11 +577,11 @@ class StudentGroupsController < ApplicationController
 	end
 	@student_group.save!
 
-	  #this is a block to state whether survey is required or not
+	#this is a block to state whether survey is required or not
 	@student_group.players.each do |player|
 	  @student_routing=StudentRouting.find_by_player_id(player.id)
-	  	@student_routing.post_neg_required=true
-	  	@student_routing.pre_neg_required=true
+	  @student_routing.post_neg_required=true
+	  @student_routing.pre_neg_required=true
 
 	  @student_routing.save!
 
