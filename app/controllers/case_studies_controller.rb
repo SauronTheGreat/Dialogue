@@ -22,7 +22,9 @@ class CaseStudiesController < ApplicationController
       redirect_to @case_study
     else
       render :action => 'new'
-    end
+	end
+
+
   end
 
   def edit

@@ -11,6 +11,8 @@ class Question < ActiveRecord::Base
 
   validates_presence_of :questionnaire_id
   validates_presence_of :type_id
+  validates_presence_of :statement
+
 
 
 

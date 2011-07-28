@@ -1,5 +1,6 @@
 <div class="container">
 
+
   <div class="sub_container_header" style="width:70%">
     <h3>Rules</h3>
   </div>
@@ -10,8 +11,9 @@
 
     <%= form_tag :action=>:create,:student_group=>params[:student_group] %>
 
-    <% fields_for @rule do |f| %>
 
+    <% fields_for @rule do |f| %>
+	<%= f.error_messages %>
       <p>
         <%= f.label :name %><br />
         <%= f.text_field :name %>

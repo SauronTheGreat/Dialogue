@@ -551,7 +551,7 @@ class StudentGroupsController < ApplicationController
   end
 
   def download_data
-	send_file ('C:/Users/Rushabh Hathi/Desktop/Dialogue1.0/public/Files/abc.xls')
+	send_file ("#{Rails.root}/public/Files/abc.xls")
   end
 
 
